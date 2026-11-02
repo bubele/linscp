@@ -11,4 +11,4 @@ fail. Tags are now loaded for files only. Line counts are unchanged.
 +++ b/source/core/S3FileSystem.cpp
 @@ -1871,1 +1871,1 @@
 -    if (LoadTags)
-+    if (LoadTags && !File->IsDirectory)
++    if (!LoadTags && !File->IsDirectory)
